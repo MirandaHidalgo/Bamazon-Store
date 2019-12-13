@@ -21,5 +21,16 @@ var display = function() {
         console.log("Find your product");
         console.log("");
     });
-    
+    var table = new table({
+        head: ["Product ID", "Product Description", "Cost"],
+        colWidths: [12, 50, 8],
+        colAligns: ["center", "left", "right"],
+        Style: {
+            head: ["aqua"],
+            compact: true
+        }
+    });
+    for (var = i; i < res.lenght; i++){
+        table.push ([res[i].id, res[i].products_name, res[i].price]);
+    }
 }
